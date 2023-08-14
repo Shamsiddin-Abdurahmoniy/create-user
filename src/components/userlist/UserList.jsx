@@ -2,12 +2,14 @@
 import "./UserList.css";
 //
 function UserList({ users, deleteUser }) {
+  console.log(users);
   return (
     <div className="userList">
       <div className="container userList-container">
         {users.map((user) => {
           const { image, age, firstName, lastName, job, id, from, gender } =
             user;
+
           return (
             <div className="card" key={id}>
               <div className="card-inner">
